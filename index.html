@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍳 Resep Masakan Statis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dapur Digital: Kumpulan Resep Sederhana 🎶</h1>
+        <p>Temukan resep favorit Anda di sini.</p>
+        <button id="musicToggle">▶️ Putar Musik</button>
+        <audio id="backgroundMusic" loop>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Cari resep (misal: Nasi, Sayur, Ayam)...">
+        </div>
+        
+        <div id="recipeList" class="recipe-grid">
+            </div>
+
+        <div id="recipeDetail" class="detail-view hidden">
+            <button id="backButton">← Kembali ke Daftar</button>
+            <h2 id="detailTitle"></h2>
+            <div class="content-detail">
+                <h3>Bahan-Bahan:</h3>
+                <ul id="detailBahan"></ul>
+                <h3>Langkah-Langkah:</h3>
+                <ol id="detailLangkah"></ol>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+              </html>
